@@ -5,7 +5,7 @@ from matplotlib import pyplot as plt
 def useTemplateAnalyze(templateFilename, file_path):
     img = cv.imread(file_path, 0)
     img2 = img.copy()
-    template = cv.imread('./templates/'+ templateFilename + '.jpg',0)
+    template = cv.imread(templateFilename + '.jpg',0)
 
     w, h = template.shape[::-1]
     # All the 6 methods for comparison in a list
